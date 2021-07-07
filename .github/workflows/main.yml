@@ -28,7 +28,7 @@ jobs:
      - name: deploy via ssh
        uses: garygrossgarten/github-action-ssh@release
        with:
-          command: depoly.sh
+          command: ./depoly.sh
           host: ${{secrets.IP}}
           username: ec2-user
           privateKey: ${{secrets.PRIVATE_KEY}}
