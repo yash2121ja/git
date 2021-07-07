@@ -23,7 +23,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access i
-       run: sh ./depoly.sh
+     - name: deploy via ssh
+       run: sh./depoly.sh
       # Runs a single command using the runners shell
      - name: deploy via ssh
        uses: garygrossgarten/github-action-ssh@release
