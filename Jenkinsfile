@@ -5,12 +5,12 @@ pipeline {
       steps {
         echo 'Pipeline started'
         sh '''sudo yum install python
-'''
+y'''
         echo 'python done'
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         echo 'step 2'
         sh '''sudo pip install pylint
