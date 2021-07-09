@@ -4,8 +4,9 @@ pipeline {
     stage('Step1') {
       steps {
         echo 'Pipeline started'
-        sh '''pwd
-ls'''
+        sh '''sudo pip install pylint
+ls
+python -m pylint queue.py'''
       }
     }
 
