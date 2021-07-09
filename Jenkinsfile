@@ -13,8 +13,7 @@ ls'''
     stage('error') {
       steps {
         echo 'step 2'
-        sh '''sudo pip install pylint
-'''
+        sh 'python3 -m pylint deploy.py'
       }
     }
 
