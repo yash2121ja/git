@@ -11,7 +11,7 @@ ls'''
       }
     }
 
-    stage('error') {
+    stage('step2') {
       steps {
         sh '''python3 -m pylint queue.py
 '''
