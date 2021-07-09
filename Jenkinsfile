@@ -5,14 +5,14 @@ pipeline {
       steps {
         echo 'Pipeline started'
         sh '''pwd
-ls'''
+ls
+git pull'''
       }
     }
 
     stage('error') {
       steps {
-        sh '''python3 -m pip install pylint
-python3 -m pylint queue.py
+        sh '''python3 -m pylint queue.py
 '''
       }
     }
