@@ -6,7 +6,8 @@ pipeline {
         echo 'Pipeline started'
         sh '''pwd
 ls
-git pull'''
+git pull
+ls'''
       }
     }
 
