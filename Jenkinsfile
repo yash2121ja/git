@@ -9,9 +9,11 @@ ls'''
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        sh 'python3 -m pylint queue.py'
+        sh '''python3 -m pip install pylint
+python3 -m pylint queue.py
+'''
       }
     }
 
