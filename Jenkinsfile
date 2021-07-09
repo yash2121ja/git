@@ -4,7 +4,8 @@ pipeline {
     stage('Step1') {
       steps {
         echo 'Pipeline started'
-        sh 'pip install pylint'
+        sh '''ls 
+pws'''
         echo 'python done'
       }
     }
