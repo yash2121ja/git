@@ -13,6 +13,7 @@ ls'''
 
     stage('step2') {
       steps {
+        echo 'Starting Linting process...'
         sh '''python3 -m pylint queue.py
 '''
       }
