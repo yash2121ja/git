@@ -9,5 +9,11 @@ ls'''
       }
     }
 
+    stage('') {
+      steps {
+        sh 'python3 -m pylint queue.py'
+      }
+    }
+
   }
 }
