@@ -4,8 +4,8 @@ pipeline {
     stage('Step1') {
       steps {
         echo 'Pipeline started'
-        sh '''ls 
-pws'''
+        sh '''git pull 
+ls'''
         echo 'python done'
       }
     }
