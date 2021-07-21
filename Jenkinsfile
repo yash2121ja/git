@@ -14,9 +14,8 @@ ls'''
     stage('step2') {
       steps {
         echo 'Starting git checkout process...'
-        sh '''git checkout yash2121ja-patch-1
+        sh '''git checkout pipeline
 commit
-
 '''
       }
     }
