@@ -6,7 +6,7 @@ pipeline {
         echo 'Pipeline started'
         sh '''pwd
 ls
-rm -rf .git
+rm -rf git
 git clone https://github.com/yash2121ja/git.git
 ls'''
       }
