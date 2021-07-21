@@ -6,15 +6,17 @@ pipeline {
         echo 'Pipeline started'
         sh '''pwd
 ls
-git pull
+git clone https://github.com/yash2121ja/git.git
 ls'''
       }
     }
 
     stage('step2') {
       steps {
-        echo 'Starting Linting process...'
-        sh '''python3 -m pylint queue.py
+        echo 'Starting git checkout process...'
+        sh '''git checkout yash2121ja-patch-1
+commit
+
 '''
       }
     }
